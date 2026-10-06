@@ -28,5 +28,9 @@ module and_gate_using_mux
   // Implement and gate using instance(s) of mux,
   // constants 0 and 1, and wire connections
 
+  logic y;
+
+  mux u1 (0, 1, a, y);
+  mux u2 (0, a, b, o);
 
 endmodule

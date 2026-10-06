@@ -28,5 +28,9 @@ module xor_gate_using_mux
   // Implement xor gate using instance(s) of mux,
   // constants 0 and 1, and wire connections
 
+  logic y;
+
+  mux u0 (1, 0, a, y);
+  mux u1 (a, y, b, o);
 
 endmodule
